@@ -1,0 +1,128 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background: rgb(37, 48, 70);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.Calculator {
+    margin: auto;
+    position: relative;
+    top: 20px;
+    background: #333;
+    width: 450px;
+    height: 570px;
+    padding: 40px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        10px 10px 70px rgba(0, 0, 0, 0.25),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 15px rgba(0, 0, 0, 0.5)
+}
+
+.Calculator button {
+    border-radius: 8px;
+    border-color: #4b4949;
+    place-items: center;
+    position: relative;
+    top: 45px;
+    left: 17px;
+    width: 90px;
+    height: 65px;
+    margin: 5px;
+    background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+        inset 0 -8px 8px rgba(0, 0, 0, 0.75),
+        10px 20px 25px rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.747);
+    user-select: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Calculator i {
+    position: relative;
+    font-style: italic;
+    font-size: 1.5rem;
+    bottom: 5px;
+}
+
+.Calculator button::before {
+    position: absolute;
+    border-radius: 8px;
+    content: "";
+    top: 3px;
+    left: 8px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(90deg, #2d2d2d, #4d4d4d);
+    box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1),
+        10px 5px 10px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-top: 1px solid #0004;
+}
+
+.Calculator button:active {
+    filter: brightness(0.80);
+}
+
+.Calculator .clear {
+    background: linear-gradient(180deg, #ce2323, #a30505);
+    border-color: #470202;
+}
+
+.Calculator .clear::before {
+    background: linear-gradient(90deg, #d20000, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+
+.Calculator .equals {
+    background: linear-gradient(180deg, #31ce23, #32a305);
+    border-color: #204403;
+    grid-column: span 2;
+    width: 195px;
+    left: 105px;
+    top: -32px;
+}
+
+.Calculator .equals::before {
+    background: linear-gradient(90deg, #00d200, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+
+input {
+    width: 420px;
+    height: 120px;
+    border-radius: 8px;
+    background: #a1a192;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 40px;
+    font-style: italic;
+    border: 1px solid black;
+    box-shadow: 
+    inset 3px 3px 10px 3px rgba(3, 3, 3, 0.644),
+    inset -2px -2px 15px rgba(0, 0, 0, 0.5)
+    
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 50px;
+    text-align: right;
+    color: white;
+    font-style: italic;
+}
